@@ -8,10 +8,10 @@ responseHeader = {"Accept-Encoding": "gzip", "Content-Encoding": "gzip"}
 
 @app.get("/")
 async def index():
-    return FileResponse("./page/index.html.gz", media_type="text/html", headers=responseHeader)
+    return FileResponse("./app/page/index.html.gz", media_type="text/html", headers=responseHeader)
 
 @app.get("/{fileName}")
 async def main(fileName):
-    if not os.path.isfile("./page/"+fileName+".gz"):
-        return FileResponse("./page/notFound.html.gz", media_type="text/html", headers=responseHeader)
-    return FileResponse("./page/"+fileName+".gz", media_type="text/html", headers=responseHeader)
+    if not os.path.isfile("./app/page/"+fileName+".gz"):
+        return FileResponse("./app/page/notFound.html.gz", media_type="text/html", headers=responseHeader)
+    return FileResponse("./app/page/"+fileName+".gz", media_type="text/html", headers=responseHeader)
