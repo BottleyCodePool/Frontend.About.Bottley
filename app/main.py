@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from starlette.responses import FileResponse
+from fastapi.responses import FileResponse
 import os.path
 
 app = FastAPI(title="Info.Bottley")
