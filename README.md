@@ -1,4 +1,4 @@
-# Frontend.Info.Bottley
+# Frontend.About.Bottley
 Created with StackBlitz ⚡️
 
 # . . .
